@@ -1,10 +1,9 @@
 import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@as-integrations/express5';
-import { ApolloServerPluginLandingPageLocalDefault, ApolloServerPluginLandingPageProductionDefault } from '@apollo/server/plugin/landingPage/default';
 
 import express from 'express';
 import { GraphQLError } from 'graphql';
-import http from "http";
+
 import typeDefs from "./typeDefs/index.js";
 import resolvers from "./resolvers/index.js";
 import mongoose from "mongoose";
